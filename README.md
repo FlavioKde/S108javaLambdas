@@ -184,6 +184,4 @@ git push origin feature/YourFeature
 ✔ Always test your filters and transformations thoroughly
 
 🚀 HAPPY CODING & GOOD LUCK ON YOUR FUNCTIONAL JOURNEY! ✨
-yaml
-Copiar
-Editar
+
