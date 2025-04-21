@@ -1,42 +1,45 @@
-📂 JAVA LAMBDAS & STREAMS - EXERCISES PROJECT
-📄 PROJECT DESCRIPTION
-This project is centered around functional programming in Java, with a strong focus on Lambdas, Streams, and Functional Interfaces introduced in Java 8. Across three progressive levels, you'll implement powerful functional features to solve common programming problems in a modern and elegant way.
+# 📂 JAVA LAMBDAS & STREAMS - EXERCISES PROJECT
 
-🔹 KEY FEATURES
-✔ Use of Lambdas for clean inline function definitions
+## 📄 PROJECT DESCRIPTION
 
-✔ Mastering the Java Stream API for list processing
+This project is centered around **functional programming in Java**, with a strong focus on **Lambdas, Streams, and Functional Interfaces** introduced in Java 8.  
+Across three progressive levels, you'll implement powerful functional features to solve common programming problems in a modern and elegant way.
 
-✔ Creating and using Functional Interfaces
+---
 
-✔ Sorting, filtering, and mapping data with Streams
+## 🔹 KEY FEATURES
 
-✔ Applying lambda expressions in real-world scenarios
+- ✔ Use of Lambdas for clean inline function definitions  
+- ✔ Mastering the Java Stream API for list processing  
+- ✔ Creating and using Functional Interfaces  
+- ✔ Sorting, filtering, and mapping data with Streams  
+- ✔ Applying lambda expressions in real-world scenarios  
 
-💻 TECHNOLOGIES USED
-✔ Java 17+
+---
 
-✔ Eclipse / IntelliJ IDEA
+## 💻 TECHNOLOGIES USED
 
-✔ Git & GitHub for version control
+- ✔ Java 17+  
+- ✔ Eclipse / IntelliJ IDEA  
+- ✔ Git & GitHub for version control  
+- ✔ Maven  
 
-✔ Maven 
+---
 
-📋 REQUIREMENTS
-✔ Use Eclipse or IntelliJ IDEA
+## 📋 REQUIREMENTS
 
-✔ Use Java 8 or higher for Lambdas & Streams support
+- ✔ Use **Eclipse** or **IntelliJ IDEA**  
+- ✔ Use **Java 8 or higher** for Lambdas & Streams support  
+- ✔ Follow clean code practices and naming conventions  
 
-✔ Follow clean code practices and naming conventions
+---
 
+## 🛠️ INSTALLATION & SETUP
 
-🛠️ INSTALLATION & SETUP
 1️⃣ Clone the repository:
 
-bash
-Copiar
-Editar
-git clone <https://github.com/FlavioKde/S108javaLambdas.git>
+```bash
+git clone https://github.com/FlavioKde/S108javaLambdas.git
 2️⃣ Navigate to the project directory:
 
 bash
@@ -44,15 +47,12 @@ Copiar
 Editar
 cd Java-Lambdas-Streams
 3️⃣ Open the project in Eclipse or IntelliJ
-
 4️⃣ Compile and run the desired class from the src folder
 
 ▶️ EXECUTION INSTRUCTIONS
 🔸 LEVEL 1: BASIC LAMBDAS & STREAMS
 ✔ Exercise 1: Filter Strings with 'o'
-From a list of strings, return all items that contain the letter 'o'
-
-Print the resulting list using Streams
+From a list of strings, return all items that contain the letter 'o'. Print the resulting list using Streams.
 
 ✔ Exercise 2: Filter with Length Constraint
 Return all strings that:
@@ -62,34 +62,24 @@ Contain the letter 'o'
 Have more than 5 characters
 
 ✔ Exercise 3: Print All Months
-Create a list of all months of the year
-
-Print each item using a lambda expression
+Create a list of all months of the year. Print each item using a lambda expression.
 
 ✔ Exercise 4: Method Reference
-Print the list from Exercise 3 again, but this time using a method reference
+Print the list from Exercise 3 again, but this time using a method reference.
 
 ✔ Exercise 5: Pi Functional Interface
-Create a FunctionalInterface with a method getPiValue() that returns a double
-
-Instantiate it via a lambda with the value 3.1415
-
-Print the result
+Create a FunctionalInterface with a method getPiValue() that returns a double.
+Instantiate it via a lambda with the value 3.1415. Print the result.
 
 ✔ Exercise 6: Sort Mixed List (Ascending)
-Create a list of numbers and strings
-
-Sort strings from shortest to longest
+Create a list of numbers and strings. Sort strings from shortest to longest.
 
 ✔ Exercise 7: Sort Mixed List (Descending)
-Sort the same list from longest to shortest
+Sort the same list from longest to shortest.
 
 ✔ Exercise 8: Reverse String with Lambda
-Create a FunctionalInterface with reverse(String) -> String
-
-Inject a lambda that reverses any input string
-
-Call it and print the result
+Create a FunctionalInterface with reverse(String) -> String.
+Inject a lambda that reverses any input string. Call it and print the result.
 
 🔸 LEVEL 2: INTERMEDIATE STREAM OPERATIONS
 ✔ Exercise 1: Filter Names Starting with 'A'
@@ -106,11 +96,10 @@ Given a list of Integers, format them as:
 
 "o" prefix for odd numbers
 
-Example: [3, 55, 44] ➝ "o3, o55, e44"
+Example: [3, 55, 44] ➝ o3, o55, e44
 
 ✔ Exercise 3: Lambda Math Operations
 Create a FunctionalInterface with operacio() → float
-
 Implement via lambdas:
 
 Addition
@@ -138,9 +127,7 @@ Create a class Alumne with:
 
 name, age, course, grade
 
-Populate a list with 10 students
-
-Do the following using lambdas:
+Populate a list with 10 students. Using lambdas:
 
 Print name and age of each student
 
@@ -197,3 +184,6 @@ git push origin feature/YourFeature
 ✔ Always test your filters and transformations thoroughly
 
 🚀 HAPPY CODING & GOOD LUCK ON YOUR FUNCTIONAL JOURNEY! ✨
+yaml
+Copiar
+Editar
