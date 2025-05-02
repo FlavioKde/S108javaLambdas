@@ -1,21 +1,20 @@
 package level1.exercise4.logic;
 
-import level1.exercise3.dataClass.Months;
+import level1.exercise4.dataClass.Months;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class ManagerMonths {
     private List<Months> months;
 
-    public ManagerMonths(){
+
+    public ManagerMonths() {
         this.months = new ArrayList<>();
+
     }
 
-    public List<Months> getMonths() {
-        return months;
-    }
     public void loadMonths(){
         months.add(new Months("January"));
         months.add(new Months("February"));
@@ -30,6 +29,8 @@ public class ManagerMonths {
         months.add(new Months("November"));
         months.add(new Months("December"));
     }
+
+
     public void select(){
 
         months.stream().map(Months::getMonth).forEach(System.out::println);

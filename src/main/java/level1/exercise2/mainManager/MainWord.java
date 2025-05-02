@@ -5,7 +5,7 @@ import level1.exercise2.logic.ManagerWord;
 public class MainWord {
     public static void main(String[] args) {
         ManagerWord manager = new ManagerWord();
-        manager.loadWoords();
+        manager.loadWords();
         manager.selectOAndLength();
 
 

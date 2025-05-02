@@ -1,13 +1,13 @@
 package level1.exercise7.dataClass;
 
-public class Chain<T> {
-    private T chain;
+public class Chain {
+    private Object chain;
 
-    public Chain(T chain){
+    public Chain(Object chain){
         this.chain = chain;
     }
 
-    public T getChain() {
+    public Object getChain() {
         return chain;
     }
 

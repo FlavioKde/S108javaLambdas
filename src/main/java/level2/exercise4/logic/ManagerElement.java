@@ -1,55 +1,43 @@
 package level2.exercise4.logic;
 
-import level2.exercise4.dataClass.Element;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ManagerElement {
-    List<Element>elementList;
+    List<Object>elementList;
 
     public ManagerElement(){
-        this.elementList = new ArrayList<>();
+        this.elementList = new ArrayList<>(List.of("Emi", 1234,"23",
+                "Natalia", 3456, "Entrada", 12, "Marcela", "Listo"));
     }
 
-    public List<Element> getElementList() {
-        return elementList;
-    }
-    public void loadElement(){
-        elementList.add(new Element<>("Emil"));
-        elementList.add(new Element<>(32));
-        elementList.add(new Element<>(28));
-        elementList.add(new Element<>("Eucalipto"));
-        elementList.add(new Element<>("Nim"));
-        elementList.add(new Element<>("Emilio"));
-        elementList.add(new Element<>("Entrada"));
-        elementList.add(new Element<>("1234"));
-        elementList.add(new Element<>(2345));
-        elementList.add(new Element<>(34567));
-    }
     public void order(){
-        List<Element> sortedByFirstChar = this.elementList.stream().
-                sorted(Comparator.comparing(element -> element.getValue().toString().charAt(0)))
+        List<Object> sortedByFirstChar = this.elementList.stream().
+                sorted(Comparator.comparing(elementList->elementList.toString().charAt(0)))
                 .collect(Collectors.toList());
         System.out.println(sortedByFirstChar);
 
 
-        List<Element> sortedByEPresence = this.elementList.stream()
-                .filter(element -> element.getValue().toString().toLowerCase().contains("e"))
+        List<Object> sortedByEPresence = this.elementList.stream()
+                .sorted((a, b) -> {
+                    boolean aHasE = a.toString().toLowerCase().contains("e");
+                    boolean bHasE = b.toString().toLowerCase().contains("e");
+                    return Boolean.compare(!aHasE, !bHasE);
+                })
                 .collect(Collectors.toList());
         System.out.println(sortedByEPresence);
 
 
-        List<Element> modifiedList = this.elementList.stream()
-                .map(element -> new Element(element.getValue().toString().replace("a","4")))
+        List<Object> modifiedList = this.elementList.stream()
+                .map(elementList->elementList.toString().replace("a","4"))
                 .collect(Collectors.toList());
         System.out.println(modifiedList);
 
 
-        List<Element> numericElements = this.elementList.stream()
-                .filter(element -> element.getValue().toString().toLowerCase().matches("\\d+"))
+        List<Object> numericElements = this.elementList.stream()
+                .filter(elementList->elementList.toString().toLowerCase().matches("\\d+"))
                 .collect(Collectors.toList());
         System.out.println(numericElements);
 

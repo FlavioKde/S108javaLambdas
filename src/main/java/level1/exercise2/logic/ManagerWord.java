@@ -13,10 +13,7 @@ public class ManagerWord {
         this.words = new ArrayList<>();
     }
 
-    public List<Words> getWords() {
-        return words;
-    }
-    public void loadWoords(){
+    public void loadWords(){
         words.add(new Words("House"));
         words.add(new Words("Ocean"));
         words.add(new Words("Robot"));
@@ -32,8 +29,7 @@ public class ManagerWord {
 
     public void selectOAndLength(){
        List<Words> result = this.words.stream()
-                .filter(word->word.getWord().toLowerCase().contains("o"))
-                .filter(word->word.getWord().length() >=5)
+                .filter(word->word.getWord().toLowerCase().contains("o") && word.getWord().length() >=5)
                 .collect(Collectors.toList());
         result.forEach(word-> System.out.println("Word-> " +word.getWord()));
 

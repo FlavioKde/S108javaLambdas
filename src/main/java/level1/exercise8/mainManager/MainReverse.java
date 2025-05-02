@@ -1,20 +1,15 @@
 package level1.exercise8.mainManager;
 
-import level1.exercise8.interfaces.ReverseString;
 import level1.exercise8.logic.ManagerPhrase;
+import level1.exercise8.logic.ManagerPhraseReverse;
 
 public class MainReverse {
     public static void main(String[] args) {
         ManagerPhrase managerPhrase = new ManagerPhrase();
         managerPhrase.loadPhrase();
+        ManagerPhraseReverse managerPhraseReverse = new ManagerPhraseReverse(managerPhrase);
+        managerPhraseReverse.loadLambda();
 
 
-        ReverseString example = string -> new StringBuilder(string).reverse().toString();
-
-        String phrase = managerPhrase.getPhraseList().get(0).getPhraseReverse();
-
-        String examplePhrase = example.reverse(phrase);
-
-        System.out.println(examplePhrase);
     }
 }

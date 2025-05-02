@@ -1,30 +1,18 @@
 package level2.exercise3.logic;
 
-import level2.exercise3.dataClass.NumberFloat;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ManagerNumberFloat {
-    private List<NumberFloat>numberFloatList;
 
+      private  List<Float>numberFloatList;
     public ManagerNumberFloat(){
-        this.numberFloatList = new ArrayList<>();
+        this.numberFloatList = new ArrayList<>(List.of(23.8f, 54.6f, 10.01f,
+                8.02f,34.45f,10.05f, 23.7f, 12.45f, 9.12f, 6.05f));
     }
 
-    public List<NumberFloat> getNumberFloatList() {
+    public List<Float> getNumberFloatList() {
         return numberFloatList;
-    }
-    public void loadNumber(){
-        numberFloatList.add(new NumberFloat(23.8f));
-        numberFloatList.add(new NumberFloat(54.6f));
-        numberFloatList.add(new NumberFloat(23.5f));
-        numberFloatList.add(new NumberFloat(23.1f));
-        numberFloatList.add(new NumberFloat(10.0f));
-        numberFloatList.add(new NumberFloat(8.0f));
-        numberFloatList.add(new NumberFloat(6.0f));
-        numberFloatList.add(new NumberFloat(23.9f));
-        numberFloatList.add(new NumberFloat(11.2f));
-        numberFloatList.add(new NumberFloat(12.59f));
     }
 
 }

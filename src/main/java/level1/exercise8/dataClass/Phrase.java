@@ -13,7 +13,6 @@ public class Phrase {
 
     @Override
     public String toString() {
-        return "Phrase: " +"\n"+
-                "phraseReverse='" + phraseReverse;
+        return "Phrase: " + phraseReverse;
     }
 }

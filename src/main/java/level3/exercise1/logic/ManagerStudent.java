@@ -13,9 +13,6 @@ public class ManagerStudent {
         this.studentList = new ArrayList<>();
     }
 
-    public List<Student> getStudentList() {
-        return studentList;
-    }
     public void loadStudent(){
         studentList.add(new Student("Nim",45,"Java",8));
         studentList.add(new Student("Pau",34,"PHP",5));

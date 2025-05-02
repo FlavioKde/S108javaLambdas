@@ -6,7 +6,6 @@ public class MainMonths {
 
     public static void main(String[] args) {
         ManagerMonths result = new ManagerMonths();
-        result.loadMonths();
         result.select();
     }
 }
